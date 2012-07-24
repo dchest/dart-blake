@@ -14,7 +14,6 @@ class BLAKE256 implements Hash {
  
   final _MASK_8 = 0xff;
   final _MASK_32 = 0xffffffff;
-  final _BITS_PER_BYTE = 8;
   final _BYTES_PER_WORD = 4;
   final _ROUNDS = 14;
   
