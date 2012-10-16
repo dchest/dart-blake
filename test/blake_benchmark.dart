@@ -1,10 +1,10 @@
-#import("dart:crypto");
-#import("../blake.dart");
+import "dart:crypto";
+import "../blake.dart";
 
 final MEGABYTE = 1024*1024;
 
 measure(name, fn) {
-  var stopWatch = new Stopwatch.start();
+  var stopWatch = new Stopwatch()..start();
   var bytes = fn();
   print("${name} ${stopWatch.elapsedInMs()/1000}s per ${bytes/MEGABYTE} MB");
 }
@@ -13,7 +13,7 @@ main() {
   print("Running...");
   
   var zeroes = [];
-  zeroes.insertRange(0, MEGABYTE, 0);
+  zeroes.insertRange(0, 5*MEGABYTE, 0);
   
   measure("BLAKE-256", () {
     var blake = new BLAKE256();

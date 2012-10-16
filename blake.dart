@@ -5,8 +5,8 @@
 // worldwide. This software is distributed without any warranty.
 // http://creativecommons.org/publicdomain/zero/1.0/
 
-#library("blake");
-#import("dart:crypto");
+library blake;
+import "dart:crypto";
 
 class BLAKE256 implements Hash {
   

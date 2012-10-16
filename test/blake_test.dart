@@ -1,10 +1,10 @@
-#import("dart:crypto");
-#import("dart:utf");
+import "dart:crypto";
+import "dart:utf";
 
 //TODO(dchest) figure out how to get path to Dart SDK.
-#import("/Users/dchest/sources/dart/dart-sdk/lib/unittest/unittest.dart");
+import "/Users/dchest/sources/dart/dart-sdk/pkg/unittest/unittest.dart";
 
-#import("../blake.dart");
+import "../blake.dart";
 
 main() {
   test("BLAKE256", () {
